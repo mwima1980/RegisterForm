@@ -20,14 +20,17 @@
 h1 {
   font-size: 5.613rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h2 {
   font-size: 4.206rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h3 {
   font-size: 3.156rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h4 {
   font-size: 2.369rem;
@@ -66,8 +69,30 @@ body {
   height: 100vh;
   display: flex;
   .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 3px solid red;
     width: 100%;
+  }
+  .left {
+    gap: 4rem;
+    background-color: var(--color2);
+    color: var(--color1);
+    background-image: url("./src/Public/Splash.png");
+    background-position: center 6.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .text-container {
+      text-align: center;
+      h6 {
+        font-weight: 200;
+      }
+      span {
+        color: var(--color5);
+      }
+    }
   }
 }
 
