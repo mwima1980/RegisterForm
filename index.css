@@ -116,6 +116,7 @@ body {
       align-items: center;
       text-align: left;
       width: 100%;
+      height: 100%;
       padding: 2rem 2rem;
       gap: 3rem;
       .inputs-container {
@@ -141,6 +142,7 @@ body {
             padding: 1rem 2rem;
             border-radius: 1.25rem;
             background-color: var(--color2);
+            border: none;
           }
         }
       }
@@ -184,7 +186,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 1rem;
-        margin-left: 0.5rem;
         .sign-up {
           width: 100%;
           button {
@@ -197,11 +198,19 @@ body {
             font-family: Roboto;
             font-weight: bold;
             font-size: 1rem;
+            cursor: pointer;
+            &:hover {
+              background-color: #a86925;
+            }
+            &:active {
+              background-color: var(--color1);
+            }
           }
         }
         .sign-in {
           width: 100%;
-          button {
+          a {
+            display: inline-block;
             width: 100%;
             border-radius: 1.25rem;
             background-color: #373f51;
@@ -211,9 +220,22 @@ body {
             font-family: Roboto;
             font-weight: bold;
             font-size: 1rem;
+            text-align: center;
+            text-decoration: none;
+            &:hover {
+              background-color: var(--color5);
+            }
+            &:active {
+              background-color: var(--color1);
+            }
           }
         }
       }
+    }
+
+    .text {
+      color: var(--color2);
+      margin-bottom: 12rem;
     }
   }
 }
@@ -244,7 +266,6 @@ body {
       display: none;
     }
   }
-
 }
 @media (min-width: 992px) {
   html {
