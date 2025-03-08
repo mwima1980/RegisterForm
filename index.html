@@ -12,8 +12,88 @@
         <h1>SIGN UP</h1>
         <h6>Get your<span> free</span> account!</h6>
       </div>
-      <img class="img-sneaker2" src="./src/Public/Sneaker2.png" alt="Sneaker 2">
+      <img
+        class="img-sneaker2"
+        src="./src/Public/Sneaker2.png"
+        alt="Sneaker 2"
+      />
     </div>
-    <div class="right cont"></div>
+    <div class="right cont">
+      <img src="./src/Public/LogoW.svg" alt="Company Logo" />
+      <form class="container" action="#" method="post">
+        <div class="inputs-container">
+          <div class="input-container">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+            />
+          </div>
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="your@email.com"
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Your password"
+            />
+          </div>
+
+          <div class="input-container">
+            <label for="confirm-password">Confirm-Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+              placeholder="Confirm-Password"
+            />
+          </div>
+        </div>
+        <div class="checkbox-container">
+          <div class="checkbox-service">
+            <input
+              type="checkbox"
+              name="terms-of-service"
+              id="terms-of-service"
+              value="service"
+            />
+            <label for="terms-of-service">Terms of service</label>
+            <small>Terms of service</small>
+          </div>
+          <div class="checkbox-newsletter">
+            <input
+              type="checkbox"
+              name="i-want-the-newsletter"
+              id="i-want-the-newsletter"
+              value="newsletter"
+            />
+            <label for="i-want-the-newsletter">I want the newsletter</label>
+            <small>I want the newsletter</small>
+          </div>
+        </div>
+        <div class="buttons-container">
+          <div class="sign-up">
+            <label for="up">Sign up</label>
+            <button type="submit" name="sign-up" id="up">Sign up</button>
+          </div>
+          <div class="sign-in">
+            <label for="in">Sign in</label>
+            <button type="button" name="sign-in" id="in">Sign in</button>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
